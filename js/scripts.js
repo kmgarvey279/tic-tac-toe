@@ -55,6 +55,7 @@ $(document).ready(function(){
 
   $(".grid-content").click(function(event) {
     var clickedSpace = $(this);
+    $(this).unbind("click");
     var getId = $(this).attr("id");
     clickCount++;
       if (clickCount % 2 === 0) {
