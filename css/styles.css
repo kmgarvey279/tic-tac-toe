@@ -1,0 +1,33 @@
+.grid-space {
+  height: 100%;
+   width: 100%;
+   padding:5%;
+   text-align: center;
+   background-color: lightgray;
+}
+
+.row {
+  height: 20%;
+  width: 100%;
+}
+.col{
+  margin:0%;
+  padding:0%
+}
+.container{
+  height: 100vh;
+}
+
+.grid-content{
+  height:100%;
+  width:100%;
+  background-color: white;
+}
+
+.playerTwoColor {
+  background-color: red;
+}
+
+.playerOneColor {
+  background-color: blue;
+}
