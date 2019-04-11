@@ -3,7 +3,9 @@
    width: 100%;
    padding:5%;
    text-align: center;
-   background-color: lightgray;
+   background-color: #247902;
+   border-radius: 25px;
+   border: 5px solid black;
 }
 
 .row {
@@ -25,9 +27,45 @@
 }
 
 .playerTwoColor {
-  background-color: red;
+  background-color: #64CFE8;
 }
 
 .playerOneColor {
-  background-color: blue;
+  background-color: #6AC494;
+}
+
+.computerColor {
+  background-color: grey;
+}
+
+.boardGame{
+  display: none;
+}
+
+.panel-body {
+  text-align: center;
+  margin-top: 500px;
+  background-color: green;
+  width: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+  margin-top: 20%;
+  margin-left: 43%;
+  border-radius: 25px;
+
+}
+
+img {
+  margin-top: 15%;
+  weight: 150px;
+  height: 150px;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
 }

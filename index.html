@@ -9,8 +9,8 @@
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
+  <div class="boardGame">
     <div class="container">
-
         <div class="row">
           <div class="col">
             <div class="grid-space">
@@ -73,12 +73,18 @@
             </div>
           </div>
         </div>
-
+      </div>
+    </div>
+    <div class="panel-body">
       <p>Player one, please choose either X or O:</p>
       <form class="userSelect">
         <div class="radio">
-          <label> <input type="radio" name="select-x-o" value="x"> X </label>
-          <label> <input type="radio" name="select-x-o" value="o"> O </label>
+          <label> <input type="radio" name="human-or-ai" value="Human" checked=true> vs. human </label>
+          <label> <input type="radio" name="human-or-ai" value="AI"> vs. computer </label>
+        </div>
+        <div class="radio">
+          <label> <input type="radio" name="select-taco-pizza" value="Taco" checked=true> Taco </label>
+          <label> <input type="radio" name="select-taco-pizza" value="Pizza"> Pizza </label>
         </div>
         <button type="submit" name="startGame">Start Game</button>
       </form>
