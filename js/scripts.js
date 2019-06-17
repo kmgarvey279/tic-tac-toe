@@ -57,7 +57,6 @@ $(document).ready(function(){
     var clickedSpace = $(this);
     $(this).unbind("click");
     var getId = $(this).attr("id");
-    console.log(getId);
     clickCount++;
     // if (playerTwo.selectTacoPizza !== "Computer") {
       if (clickCount % 2 === 0) {
@@ -82,11 +81,10 @@ $(document).ready(function(){
         newBoard.addPlayerSpace(newSpace);
       }
 
-      var playerOneChecks = newBoard.playerSpaces.filter(space => space.mark === "playerOneChecked").map(mark=>parseInt(mark.spaceId));;
-      console.log(playerOneChecks);
+      var playerOneChecks = newBoard.playerSpaces.filter(space => space.mark === "playerOneChecked").map(mark=>parseInt(mark.spaceId));
 
       var playerTwoChecks = newBoard.playerSpaces.filter(space => space.mark === "playerTwoChecked").map(mark=>parseInt(mark.spaceId));
-      console.log(playerTwoChecks);
+
       const winConditions = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [0,4,8], [1,4,7], [2,4,6], [2,5,8]]
 
       const won1 = winConditions.some(winCondition=>winCondition.every(space=>playerOneChecks.includes(space)));
