@@ -44,27 +44,6 @@ if (userOneAssignment === "Pizza" && playerTwoId === "Human") {
   playerOne = new Player(userOneAssignment);
   playerTwo = new Player(userTwoAssignment);
 }
-
-// function computerMove(insertId) {
-//   var randomNumber = Math.floor(Math.random() * 8);
-//   // function findSpace(random) {
-//   // return $(#random)
-//   // }
-//   // for (var i=0; i < newBoard.playerSpaces.length; i++) {
-//     if (randomNumber === insertId) {
-//       randomNumber = Math.floor(Math.random() * 8);
-//     } else {
-//     // findSpace(randomNumber)
-//     // clickedSpace = ($(".grid-content").val());
-//     clickedSpace.unbind("click");
-//     clickedSpace.addClass("computerColor");
-//     clickedSpace.append('<img src="img/robot.png" />');
-//     var playerChecked = "playerTwoChecked"
-//     var newSpace = new Space(getId, playerChecked);
-//     newBoard.addPlayerSpace(newSpace);
-//     }
-//   }
-// }
 var clickCount = 0;
 $(document).ready(function(){
   $(".userSelect").submit(function(event){
@@ -102,14 +81,6 @@ $(document).ready(function(){
         var newSpace = new Space(getId, playerChecked);
         newBoard.addPlayerSpace(newSpace);
       }
-    // } else if (playerTwo.selectTacoPizza === "Computer") {
-    //   clickedSpace.addClass("playerOneColor");
-    //   clickedSpace.append('<img src="img/taco3.png" />');
-    //   var playerChecked = "playerOneChecked"
-    //   var newSpace = new Space(getId, playerChecked);
-    //   newBoard.addPlayerSpace(newSpace);
-    //   computerMove(getId);
-    // }
 
       var playerOneChecks = newBoard.playerSpaces.filter(space => space.mark === "playerOneChecked").map(mark=>parseInt(mark.spaceId));;
       console.log(playerOneChecks);
